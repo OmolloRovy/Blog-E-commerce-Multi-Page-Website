@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Blog & Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Blog & Shop</h1>
+            <nav class="main-nav">
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="product-main">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> &gt;
+                <a href="index.html">Shop</a> &gt;
+                <span>Product Details</span>
+            </div>
+            
+            <div class="product-detail">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://www.shutterstock.com/image-photo/headphones-isolate-on-white-wireless-black-2466522991" alt="Wireless Headphones" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="https://www.pexels.com/photo/silhouette-of-palm-trees-near-shoreline-461940/" alt="Thumbnail 1" class="thumbnail active" data-image="https://www.pexels.com/photo/solitary-walker-on-snow-covered-mountain-slope-30361025/">
+                        <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Thumbnail 2" class="thumbnail" data-image="https://via.placeholder.com/600x600?text=Back+View">
+                        <img src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Thumbnail 3" class="thumbnail" data-image="https://www.pexels.com/photo/macro-photography-of-water-drops-3394939/">
+                        <img src="https://www.pexels.com/photo/red-concrete-brick-259915/" alt="Thumbnail 4" class="thumbnail" data-image="https://www.pexels.com/photo/red-concrete-brick-259915/">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h1 class="product-title">Premium Wireless Headphones</h1>
+                    <div class="product-meta">
+                        <span class="product-sku">SKU: HP-2023-BLK</span>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="#reviews" class="review-count">(24 reviews)</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price">kes 1099.99</span>
+                        <span class="original-price">kes 12129.99</span>
+                        <span class="discount">23% off</span>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p>Experience crystal-clear sound with our premium wireless headphones. Featuring noise cancellation, 30-hour battery life, and ultra-comfortable ear cushions for extended listening sessions.</p>
+                        
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Active Noise Cancellation</li>
+                            <li><i class="fas fa-check"></i> 30-hour battery life</li>
+                            <li><i class="fas fa-check"></i> Bluetooth 5.0</li>
+                            <li><i class="fas fa-check"></i> Built-in microphone</li>
+                            <li><i class="fas fa-check"></i> Foldable design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label for="color-option">Color:</label>
+                            <select id="color-option" class="form-control">
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-secondary wishlist-btn">
+                            <i class="far fa-heart"></i> Add to Wishlist
+                        </button>
+                    </div>
+                    
+                    <div class="product-share">
+                        <span>Share:</span>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-tabs">
+                <ul class="tab-nav">
+                    <li class="active" data-tab="description">Description</li>
+                    <li data-tab="specs">Specifications</li>
+                    <li data-tab="reviews" id="reviews-tab">Reviews</li>
+                    <li data-tab="shipping">Shipping</li>
+                </ul>
+                
+                <div class="tab-content active" id="description">
+                    <h2>Product Description</h2>
+                    <p>Our Premium Wireless Headphones deliver an unparalleled audio experience with advanced noise cancellation technology that blocks out external noise, allowing you to immerse yourself in your music.</p>
+                    <p>The ergonomic design features plush ear cushions and an adjustable headband for all-day comfort. With Bluetooth 5.0, you'll enjoy stable connectivity up to 30 feet from your device.</p>
+                    <p>The built-in microphone with echo cancellation makes these headphones perfect for calls and virtual meetings. The foldable design makes them easy to carry in the included premium carrying case.</p>
+                </div>
+                
+                <div class="tab-content" id="specs">
+                    <h2>Technical Specifications</h2>
+                    <table class="specs-table">
+                        <tr>
+                            <th>Brand</th>
+                            <td>AudioPro</td>
+                        </tr>
+                        <tr>
+                            <th>Model</th>
+                            <td>NC-300</td>
+                        </tr>
+                        <tr>
+                            <th>Connectivity</th>
+                            <td>Bluetooth 5.0, 3.5mm audio jack</td>
+                        </tr>
+                        <tr>
+                            <th>Battery Life</th>
+                            <td>Up to 30 hours (ANC on), 40 hours (ANC off)</td>
+                        </tr>
+                        <tr>
+                            <th>Charging Time</th>
+                            <td>2 hours (full charge)</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>254g</td>
+                        </tr>
+                        <tr>
+                            <th>Dimensions</th>
+                            <td>18.5 x 17.5 x 8.5 cm (folded)</td>
+                        </tr>
+                        <tr>
+                            <th>Warranty</th>
+                            <td>2 years manufacturer warranty</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="tab-content" id="reviews">
+                    <h2>Customer Reviews</h2>
+                    <div class="review-summary">
+                        <div class="average-rating">
+                            <div class="average-number">4.7</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="total-reviews">Based on 24 reviews</div>
+                        </div>
+                        <div class="rating-bars">
+                            <div class="rating-bar">
+                                <span class="star-count">5 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 75%"></div>
+                                </div>
+                                <span class="percentage">75%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="star-count">4 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 15%"></div>
+                                </div>
+                                <span class="percentage">15%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="star-count">3 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 5%"></div>
+                                </div>
+                                <span class="percentage">5%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="star-count">2 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 3%"></div>
+                                </div>
+                                <span class="percentage">3%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="star-count">1 star</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 2%"></div>
+                                </div>
+                                <span class="percentage">2%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="review-list">
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-author">Alex Johnson</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-date">May 10, 2025</div>
+                            </div>
+                            <div class="review-title">Excellent sound quality</div>
+                            <div class="review-content">
+                                <p>The noise cancellation is amazing! I can't hear anything when I have these on. Battery life is as advertised and the sound quality is superb.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-author">Sarah Miller</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="review-date">April 28, 2025</div>
+                            </div>
+                            <div class="review-title">Very comfortable</div>
+                            <div class="review-content">
+                                <p>I wear these for hours at a time and they never hurt my ears. The sound is great and they look stylish too. My only minor complaint is the case could be a bit more protective.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="review-form">
+                        <h3>Write a Review</h3>
+                        <form id="add-review-form">
+                            <div class="form-group">
+                                <label for="review-name">Name</label>
+                                <input type="text" id="review-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-email">Email</label>
+                                <input type="email" id="review-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <div class="rating-input">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                    <input type="hidden" id="review-rating" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-title">Review Title</label>
+                                <input type="text" id="review-title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-text">Your Review</label>
+                                <textarea id="review-text" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="shipping">
+                    <h2>Shipping & Returns</h2>
+                    <h3>Shipping Information</h3>
+                    <p>We offer free standard shipping on all orders over $50. Standard shipping typically takes 3-5 business days.</p>
+                    <p>Express shipping options are available at checkout for an additional fee.</p>
+                    
+                    <h3>Return Policy</h3>
+                    <p>If you're not completely satisfied with your purchase, you may return it within 30 days of receipt for a full refund or exchange.</p>
+                    <p>Items must be in new, unused condition with all original packaging and tags attached.</p>
+                </div>
+            </div>
+            
+            <section class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="product-grid" id="related-products">
+                    <!-- Related products will be loaded via JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Combining quality content with excellent products since 2024.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="index.html">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <address>
+                        <p><i class="fas fa-envelope"></i> contact@blogandshop.com</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    </address>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Blog & Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Blog & Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Blog & Shop</h1>
+            <nav class="main-nav">
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="shop/index.html">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+
+            <!-- Cart Dropdown -->
+            <!-- <div class="cart-dropdown" id="cart-dropdown">
+                <div class="cart-header">
+                    <h3>Your Cart</h3>
+                    <span class="close-cart">&times;</span>
+                </div>
+                <div class="cart-items-container" id="cart-items-container"> -->
+                    <!-- Cart items will be loaded here via JavaScript -->
+                    <!-- <div class="empty-cart-message">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Your cart is empty</p>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <div class="cart-subtotal">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">$0.00</span>
+                    </div>
+                    <a href="cart.html" class="btn view-cart-btn">View Cart</a>
+                    <a href="checkout.html" class="btn checkout-btn">Checkout</a>
+                </div>
+            </div> -->
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to Blog & Shop</h2>
+                <p>Discover our latest articles and products</p>
+                <div class="cta-buttons">
+                    <a href="blog/index.html" class="btn">Read Blog</a>
+                    <a href="shop/index.html" class="btn btn-secondary">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+                <h2>Featured Blog Posts</h2>
+                <div class="featured-posts" id="featured-posts">
+                    <!-- JavaScript will load featured posts here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+                <h2>Popular Products</h2>
+                <div class="featured-products" id="featured-products">
+                    <!-- JavaScript will load featured products here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="main-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Combining quality content with excellent products since 2023.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="shop/index.html">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <address>
+                        <p><i class="fas fa-envelope"></i> contact@blogandshop.com</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    </address>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Blog & Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

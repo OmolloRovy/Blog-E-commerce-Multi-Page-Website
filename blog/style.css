@@ -1,0 +1,290 @@
+/* Blog Post Specific Styles */
+.blog-post-main {
+    padding: 3rem 0;
+}
+
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.post-title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.post-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-image {
+    margin-bottom: 2rem;
+}
+
+.post-image img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.post-content {
+    line-height: 1.8;
+}
+
+.post-content h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: var(--primary-color);
+}
+
+.post-content p {
+    margin-bottom: 1rem;
+}
+
+.post-content ul, 
+.post-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+.post-quote {
+    background-color: rgba(74, 111, 165, 0.1);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.post-quote blockquote {
+    margin: 0;
+}
+
+.post-tags {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.post-tags a {
+    background-color: var(--gray-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 0.3s;
+}
+
+.post-tags a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.post-footer {
+    margin-top: 3rem;
+}
+
+.author-bio {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: rgba(0,0,0,0.03);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.author-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--gray-color);
+    padding: 1rem 0;
+}
+
+.prev-post, 
+.next-post {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: color 0.3s;
+}
+
+.prev-post:hover, 
+.next-post:hover {
+    color: var(--primary-color);
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comments-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.comment-list {
+    margin-bottom: 3rem;
+}
+
+.comment {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.comment-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.comment-meta {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.comment-author-name {
+    font-weight: bold;
+    display: block;
+}
+
+.comment-date {
+    color: #666;
+    display: block;
+}
+
+.comment-content {
+    flex-grow: 1;
+}
+
+/* Comment Form */
+.comment-form {
+    background-color: rgba(0,0,0,0.03);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.comment-form h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--gray-color);
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    min-height: 150px;
+}
+
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 1.5rem;
+    }
+    
+    .post-title {
+        font-size: 1.8rem;
+    }
+    
+    .post-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    .author-bio {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .comment {
+        flex-direction: column;
+    }
+    
+    .comment-author {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .comment-meta {
+        text-align: left;
+    }
+} 
