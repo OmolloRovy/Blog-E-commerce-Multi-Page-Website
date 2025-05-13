@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 1,
                 name: "Wireless Headphones",
                 price: 99.99,
-                image: "https://www.shutterstock.com/image-photo/headphones-isolate-on-white-wireless-black-2466522991",
+                image: "../images/headphones.png",
                 category: "electronics"
             },
             {
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <img src="${product.image}" alt="${product.name}">
                 <div class="product-info">
                     <h3>${product.name}</h3>
-                    <p class="price">$${product.price.toFixed(2)}</p>
+                    <p class="price">Kes ${product.price.toFixed(2)}</p>
                     <button class="btn add-to-cart" data-id="${product.id}">Add to Cart</button>
                 </div>
             </div>
@@ -249,13 +249,13 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 title: "10 Tips for Better Productivity",
                 excerpt: "Discover practical tips to boost your productivity.",
-                date: "2023-05-15",
+                date: "2025-05-15",
                 image: "https://www.shutterstock.com/image-photo/discover-explore-variety-effective-tips-that-2545571209"
             },
             {
                 title: "The Future of Web Development",
                 excerpt: "Exploring the latest trends in web development.",
-                date: "2023-05-10",
+                date: "2025-05-10",
                 image: "https://www.shutterstock.com/image-photo/software-engineer-development-concepts-programming-various-2485654259"
             }
         ];
@@ -279,14 +279,14 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 id: 1,
                 name: "Wireless Headphones",
-                price: 99.99,
-                image: "https://www.shutterstock.com/image-photo/headphones-isolate-on-white-wireless-black-2466522991",
+                price: 2099.99,
+                image: "../images/headphones.png",
                 category: "electronics"
             },
             {
                 id: 2,
                 name: "Cotton T-Shirt",
-                price: 24.99,
+                price: 2024.99,
                 image: "https://www.shutterstock.com/image-photo/blank-tshirt-template-fashion-merch-designers-2526104397",
                 category: "clothing"
             }
@@ -483,7 +483,7 @@ if (document.getElementById('cart-items')) {
                 <div class="cart-item-details">
                     <h3 class="cart-item-title">${item.name}</h3>
                     <p class="cart-item-variant">Color: Black</p>
-                    <p class="cart-item-price">$${item.price.toFixed(2)}</p>
+                    <p class="cart-item-price">Kes ${item.price.toFixed(2)}</p>
                     <div class="cart-item-actions">
                         <button class="remove-item">Remove</button>
                     </div>
@@ -494,7 +494,7 @@ if (document.getElementById('cart-items')) {
                         <input type="number" class="quantity-input" value="${item.quantity}" min="1" max="10">
                         <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
                     </div>
-                    <p class="cart-item-total-price">$${(item.price * item.quantity).toFixed(2)}</p>
+                    <p class="cart-item-total-price">Kes ${(item.price * item.quantity).toFixed(2)}</p>
                     <button class="update-cart">Update</button>
                 </div>
             </div>
@@ -506,6 +506,11 @@ if (document.getElementById('cart-items')) {
         // Update cart summary
         updateCartSummary();
     }
+        // cart Icon reveal 
+    document.getElementById('cart-icon').addEventListener('click', function() {
+        alert('Checkout functionality would be implemented here!');
+        // In a real app, this would redirect to a checkout page
+    });
     
     // Add event listeners to cart items
     function addCartItemEventListeners() {
@@ -584,7 +589,7 @@ if (document.getElementById('cart-items')) {
         const price = parseFloat(cartItem.querySelector('.cart-item-price').textContent.replace('$', ''));
         const quantity = parseInt(cartItem.querySelector('.quantity-input').value);
         const total = price * quantity;
-        cartItem.querySelector('.cart-item-total-price').textContent = `$${total.toFixed(2)}`;
+        cartItem.querySelector('.cart-item-total-price').textContent = `Kes ${total.toFixed(2)}`;
     }
     
     // Update cart summary
@@ -594,10 +599,10 @@ if (document.getElementById('cart-items')) {
         const shipping = subtotal > 50 ? 0 : 5.99;
         const tax = subtotal * 0.08; // 8% tax
         
-        document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
-        document.getElementById('shipping').textContent = shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`;
-        document.getElementById('tax').textContent = `$${tax.toFixed(2)}`;
-        document.getElementById('total').textContent = `$${(subtotal + shipping + tax).toFixed(2)}`;
+        document.getElementById('subtotal').textContent = `Kes ${subtotal.toFixed(2)}`;
+        document.getElementById('shipping').textContent = shipping === 0 ? 'FREE' : `Kes ${shipping.toFixed(2)}`;
+        document.getElementById('tax').textContent = `Kes ${tax.toFixed(2)}`;
+        document.getElementById('total').textContent = `Kes ${(subtotal + shipping + tax).toFixed(2)}`;
     }
     
     // Load recommended products
