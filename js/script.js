@@ -22,32 +22,19 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCartCount();
 
     // Cart Dropdown Functionality
-    const cartIcon = document.querySelector('.cart-icon');
-    const cartDropdown = document.getElementById('cart-dropdown');
-    const closeCart = document.querySelector('.close-cart');
+    const cartIcon = document.getElementById("cart-icon");
+    const cartDropdown = document.getElementById("cart-dropdown");
+    const closeCart = document.querySelector(".close-cart");
 
-    // Toggle cart dropdown
-    if (cartIcon && cartDropdown) {
-        cartIcon.addEventListener('click', function(e) {
-            e.stopPropagation();
-            cartDropdown.classList.toggle('active');
-            if (cartDropdown.classList.contains('active')) {
-                loadCartDropdown();
-            }
-        });
+    // Toggle dropdown visibility when cart icon is clicked
+    cartIcon.addEventListener("click", () => {
+        cartDropdown.classList.toggle("hidden");
+    });
 
-        // Close cart when clicking close button
-        closeCart.addEventListener('click', function() {
-            cartDropdown.classList.remove('active');
-        });
-
-        // Close cart when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!cartDropdown.contains(e.target) && e.target !== cartIcon && !cartIcon.contains(e.target)) {
-                cartDropdown.classList.remove('active');
-            }
-        });
-    }
+    // Hide dropdown when close button is clicked
+    closeCart.addEventListener("click", () => {
+        cartDropdown.classList.add("hidden");
+    });
 
     // Load cart items in dropdown
     function loadCartDropdown() {

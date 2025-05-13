@@ -404,6 +404,7 @@ body {
         margin-bottom: 1rem;
     }
 }
+
 /* Product Detail Page Styles */
 .product-main {
     padding: 2rem 0;
@@ -1131,4 +1132,9 @@ body {
         height: auto;
         max-height: 200px;
     }
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
 }
